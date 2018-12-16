@@ -68,7 +68,7 @@
     "@types/node": "^10.5.7",
     "alexa-app": "^4.2.2",
     "alexa-utterances": "^0.2.1",
-    "ava": "^0.25.0",
+    "ava": "^1.0.1",
     "clipboardy": "^1.2.3",
     "coveralls": "^3.0.2",
     "express": "^4.16.3",
