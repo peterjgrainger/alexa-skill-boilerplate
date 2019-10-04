@@ -1,20 +1,20 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.13.5
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:braces:20180219':
     - nyc > micromatch > braces:
         reason: None given
         expires: '2018-04-26T09:15:07.590Z'
-      ava > chokidar > anymatch > micromatch > braces:
-        reason: None given
-        expires: '2018-09-06T08:31:35.849Z'
     - nyc > test-exclude > micromatch > braces:
         reason: None given
         expires: '2018-04-26T09:15:07.590Z'
     - ava > chokidar > anymatch > micromatch > braces:
         reason: None given
         expires: '2018-04-26T09:15:07.590Z'
+    - ava > chokidar > anymatch > micromatch > braces:
+        reason: None given
+        expires: '2018-09-06T08:31:35.849Z'
   'npm:hoek:20180212':
     - ava > chokidar > fsevents > node-pre-gyp > hawk > hoek:
         reason: None given
@@ -122,3 +122,8 @@ patch:
   'npm:stringstream:20180511':
     - ava > chokidar > fsevents > node-pre-gyp > request > stringstream:
         patched: '2018-08-07T08:30:51.273Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T00:46:03.582Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T00:46:03.582Z'
